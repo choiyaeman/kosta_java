@@ -2,4 +2,4 @@
 KOSTA Entry Level Java
 
 # Author
-Yeman CHOI
+Yaeman Choi
