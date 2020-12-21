@@ -400,12 +400,12 @@ Circle타입의 객체는 부모 타입의 영역을 갖고 있다 area는 0.0�
 
 eclipse에서 오버라이딩은 줄 번호 앞에 초록색 삼각형은 오버라이딩된 메소드를 의미.
 
-![Untitled 1](https://user-images.githubusercontent.com/63957819/102784304-8c90cd00-43df-11eb-9fc5-8b4be0e3602c.png)
+![Untitled](https://user-images.githubusercontent.com/63957819/102787837-0a0b0c00-43e5-11eb-9d89-24af04842742.png)
 
 **자바의 최상위 클래스**
-![Untitled 2](https://user-images.githubusercontent.com/63957819/102784305-8c90cd00-43df-11eb-922f-cabb05e72c1f.png)
+![20201221_154928](https://user-images.githubusercontent.com/63957819/102787857-11cab080-43e5-11eb-95e8-e8917d5abba8.jpg)
 
-![Untitled 3](https://user-images.githubusercontent.com/63957819/102784307-8d296380-43df-11eb-8460-7b2aaa49cece.png)
+![Untitled 1](https://user-images.githubusercontent.com/63957819/102787879-18f1be80-43e5-11eb-9b88-09517b24c6b6.png)
 
 화살표의 화살 쪽이 닫혀야 상속이다.
 
@@ -439,13 +439,13 @@ Object클래스가 갖고 있는 equals는 ==하고 같다.
 
 실습>
 
-![InheritanceExcercise](https://user-images.githubusercontent.com/63957819/102784303-8bf83680-43df-11eb-9a11-83cca5de6852.png)
+![InheritanceExcercise](https://user-images.githubusercontent.com/63957819/102787902-2018cc80-43e5-11eb-8fb2-800477afb274.png)
 
-![Untitled 4](https://user-images.githubusercontent.com/63957819/102784308-8d296380-43df-11eb-912f-6050499a4464.png)
+![Untitled 2](https://user-images.githubusercontent.com/63957819/102787923-29099e00-43e5-11eb-81e0-7a0464e7fb7b.png)
 
 Package Presentation>Hierarchical(계층) 선택
 
-![Untitled](https://user-images.githubusercontent.com/63957819/102784310-8dc1fa00-43df-11eb-8205-d02c8ed3dcaf.png)
+![Untitled 3](https://user-images.githubusercontent.com/63957819/102787931-2c048e80-43e5-11eb-8110-b67fee041bf9.png)
 
 ```java
 package main;
@@ -587,6 +587,6 @@ public class TempEmployee extends Employee {
 }
 ```
 
-![day10%209581ea6cd9d946b2ae10e98972fe6e68/Untitled%204.png](day10%209581ea6cd9d946b2ae10e98972fe6e68/Untitled%204.png)
+![Untitled 4](https://user-images.githubusercontent.com/63957819/102787954-36bf2380-43e5-11eb-8a2b-58591056dce8.png)
 
 ---
