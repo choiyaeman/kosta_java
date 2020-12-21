@@ -4,7 +4,7 @@
 
         **CD, UD, SD**
 
-![day10%209581ea6cd9d946b2ae10e98972fe6e68/20201221_102753.jpg](day10%209581ea6cd9d946b2ae10e98972fe6e68/20201221_102753.jpg)
+![20201221_102753](https://user-images.githubusercontent.com/63957819/102784290-88fd4600-43df-11eb-9747-1d2bb8803ed8.jpg)
 
 **Circle**
 
@@ -138,9 +138,9 @@ public class Triangle {
 
 ---
 
-![day10%209581ea6cd9d946b2ae10e98972fe6e68/20201221_110629.jpg](day10%209581ea6cd9d946b2ae10e98972fe6e68/20201221_110629.jpg)
+![20201221_110629](https://user-images.githubusercontent.com/63957819/102784292-8ac70980-43df-11eb-952f-5305675266f7.jpg)
 
-![day10%209581ea6cd9d946b2ae10e98972fe6e68/20201221_112435.jpg](day10%209581ea6cd9d946b2ae10e98972fe6e68/20201221_112435.jpg)
+![20201221_112435](https://user-images.githubusercontent.com/63957819/102784297-8ac70980-43df-11eb-9d0e-d06c91a999b9.jpg)
 
 class Circle extends Shape{}
 
@@ -268,7 +268,7 @@ public class Triangle extends Shape{
 
 ---
 
-![day10%209581ea6cd9d946b2ae10e98972fe6e68/20201221_115159.jpg](day10%209581ea6cd9d946b2ae10e98972fe6e68/20201221_115159.jpg)
+![20201221_115159](https://user-images.githubusercontent.com/63957819/102784298-8b5fa000-43df-11eb-994c-4107042ff95a.jpg)
 
 자료형은 Circle c변수의 값이 c변수를 test메소드인 매개변수로 대입 s변수는 s변수가 참조하고 있는 Circle타입 객체 객체를 찾아가 봤더니 전체는 참조하지 못하고 그 안에 들어있는 shape영역만 참조. test메소드 한개 가지고서 Circle타입의 객체가 갖는 영역에 shape부분 참조, Rectangle타입의 객체가 갖는 영역에 shape부분 참조.. 여려 형태로 처리 가능 ⇒ 다형성 
 
@@ -358,7 +358,7 @@ public class VariableTest {
 - 자동 타입 변환은 프로그램 실행 도중에 자동적으로 타입 변환이 일어나는 것을 말한다.(upcasting)
 - 부모 자식관계 에서 메소드 이름, 매개변수, 리턴 타입 같은 것을 오버 라이딩이라한다.
 
-![day10%209581ea6cd9d946b2ae10e98972fe6e68/20201221_145255.jpg](day10%209581ea6cd9d946b2ae10e98972fe6e68/20201221_145255.jpg)
+![20201221_145255](https://user-images.githubusercontent.com/63957819/102784299-8b5fa000-43df-11eb-9da0-02f65e513899.jpg)
 
 부모쪽에 메소드2가 먼저 만들어지고 자식 쪽 에서 메소드2가 또 만들어진다. 이런 걸 메소드 재정의를 말한다. 둘 중에 하나만 쓸 수 있도록 미리 만들었던 메소드를 새로만든 메소드로 덮어쓴다. 부모쪽 메소드가 먼저 메모리에 탑재 그리고 자식 메소드가 다시 재정의를 의미.
 
@@ -400,13 +400,12 @@ Circle타입의 객체는 부모 타입의 영역을 갖고 있다 area는 0.0�
 
 eclipse에서 오버라이딩은 줄 번호 앞에 초록색 삼각형은 오버라이딩된 메소드를 의미.
 
-![day10%209581ea6cd9d946b2ae10e98972fe6e68/Untitled.png](day10%209581ea6cd9d946b2ae10e98972fe6e68/Untitled.png)
+![Untitled 1](https://user-images.githubusercontent.com/63957819/102784304-8c90cd00-43df-11eb-9fc5-8b4be0e3602c.png)
 
 **자바의 최상위 클래스**
+![Untitled 2](https://user-images.githubusercontent.com/63957819/102784305-8c90cd00-43df-11eb-922f-cabb05e72c1f.png)
 
-![day10%209581ea6cd9d946b2ae10e98972fe6e68/20201221_154928.jpg](day10%209581ea6cd9d946b2ae10e98972fe6e68/20201221_154928.jpg)
-
-![day10%209581ea6cd9d946b2ae10e98972fe6e68/Untitled%201.png](day10%209581ea6cd9d946b2ae10e98972fe6e68/Untitled%201.png)
+![Untitled 3](https://user-images.githubusercontent.com/63957819/102784307-8d296380-43df-11eb-8460-7b2aaa49cece.png)
 
 화살표의 화살 쪽이 닫혀야 상속이다.
 
@@ -440,13 +439,13 @@ Object클래스가 갖고 있는 equals는 ==하고 같다.
 
 실습>
 
-![day10%209581ea6cd9d946b2ae10e98972fe6e68/_(1).png](day10%209581ea6cd9d946b2ae10e98972fe6e68/_(1).png)
+![InheritanceExcercise](https://user-images.githubusercontent.com/63957819/102784303-8bf83680-43df-11eb-9a11-83cca5de6852.png)
 
-![day10%209581ea6cd9d946b2ae10e98972fe6e68/Untitled%202.png](day10%209581ea6cd9d946b2ae10e98972fe6e68/Untitled%202.png)
+![Untitled 4](https://user-images.githubusercontent.com/63957819/102784308-8d296380-43df-11eb-912f-6050499a4464.png)
 
 Package Presentation>Hierarchical(계층) 선택
 
-![day10%209581ea6cd9d946b2ae10e98972fe6e68/Untitled%203.png](day10%209581ea6cd9d946b2ae10e98972fe6e68/Untitled%203.png)
+![Untitled](https://user-images.githubusercontent.com/63957819/102784310-8dc1fa00-43df-11eb-8205-d02c8ed3dcaf.png)
 
 ```java
 package main;
