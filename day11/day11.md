@@ -143,10 +143,6 @@ public class TempEmployee extends Employee{
 }
 ```
 
----
-
-![Untitled](https://user-images.githubusercontent.com/63957819/102888890-fc18c200-449c-11eb-9106-589be8a4bd30.png)
-
 ```java
 package inheritance;
 
@@ -330,7 +326,7 @@ ex) abstract class Shape{}     new Shape(); (x)
 
 멤버필드 앞에는 abstract 못 쓴다.
 
-![day11%204a997c36271d46ad8ef0e1e2af871f94/Untitled.png](day11%204a997c36271d46ad8ef0e1e2af871f94/Untitled.png)
+![Untitled](https://user-images.githubusercontent.com/63957819/102888890-fc18c200-449c-11eb-9106-589be8a4bd30.png)
 
 Calendar 클래스는 추상 클래스로 new로 객체 생성을 못한다
 
