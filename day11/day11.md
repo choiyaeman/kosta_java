@@ -1,6 +1,6 @@
 # day11
 
-![day11%204a997c36271d46ad8ef0e1e2af871f94/20201222_093111.jpg](day11%204a997c36271d46ad8ef0e1e2af871f94/20201222_093111.jpg)
+![20201222_093111](https://user-images.githubusercontent.com/63957819/102888881-f9b66800-449c-11eb-842b-4e16790e9c25.jpg)
 
 Person이라는 클래스가 있고 하위 클래스인 Employee
 
@@ -145,7 +145,7 @@ public class TempEmployee extends Employee{
 
 ---
 
-[Untitled](https://www.notion.so/f1d0e9b92e6e4a4397a0456807809549)
+![Untitled](https://user-images.githubusercontent.com/63957819/102888890-fc18c200-449c-11eb-9106-589be8a4bd30.png)
 
 ```java
 package inheritance;
@@ -336,14 +336,14 @@ Calendar 클래스는 추상 클래스로 new로 객체 생성을 못한다
 
 private, abstract → new키워드로 객체 생성(x)
 
-![day11%204a997c36271d46ad8ef0e1e2af871f94/Untitled%201.png](day11%204a997c36271d46ad8ef0e1e2af871f94/Untitled%201.png)
+![Untitled 1](https://user-images.githubusercontent.com/63957819/102888887-fb802b80-449c-11eb-892b-3da238aa6c82.png)
 
 Calendar c = new Calendar(); (X)
 Calendar c = Calendar.getInstance();(0)
 
 getInstance는 return타입이 캘린더 타입 이니깐 써라
 
-![day11%204a997c36271d46ad8ef0e1e2af871f94/Untitled%202.png](day11%204a997c36271d46ad8ef0e1e2af871f94/Untitled%202.png)
+![Untitled 2](https://user-images.githubusercontent.com/63957819/102888888-fb802b80-449c-11eb-8174-5de1fc58f0bf.png)
 
 Calendar c = Calendar.getInstance(); → new GregorianCalendar()타입의 객체를 생성 하도록 코드가 되어있다. Calender가 부모고 자식인 GregorianCalendar()타입의 객체가 만들어진다. c는 Calender 전체를 참조 하는게 아니라 GregorianCalendar을 참조.
 
