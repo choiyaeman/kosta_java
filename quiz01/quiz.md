@@ -1,0 +1,171 @@
+# Quiz
+
+1.
+
+![Quiz%20deb9cf15ce0b476d939b8d54c850141b/20201223_162219.jpg](Quiz%20deb9cf15ce0b476d939b8d54c850141b/20201223_162219.jpg)
+
+2.
+
+![Quiz%20deb9cf15ce0b476d939b8d54c850141b/20201223_162353.jpg](Quiz%20deb9cf15ce0b476d939b8d54c850141b/20201223_162353.jpg)
+
+3.
+
+![Quiz%20deb9cf15ce0b476d939b8d54c850141b/20201223_162500.jpg](Quiz%20deb9cf15ce0b476d939b8d54c850141b/20201223_162500.jpg)
+
+4.
+
+![Quiz%20deb9cf15ce0b476d939b8d54c850141b/20201223_162608.jpg](Quiz%20deb9cf15ce0b476d939b8d54c850141b/20201223_162608.jpg)
+
+**5**.
+
+![Quiz%20deb9cf15ce0b476d939b8d54c850141b/20201223_162801.jpg](Quiz%20deb9cf15ce0b476d939b8d54c850141b/20201223_162801.jpg)
+
+= 하나면 대입 연산자이다. 그러므로 조건 비교를 할 수 없다. ==이 조건 비교이다.
+
+**6.**
+
+![Quiz%20deb9cf15ce0b476d939b8d54c850141b/20201223_162931.jpg](Quiz%20deb9cf15ce0b476d939b8d54c850141b/20201223_162931.jpg)
+
+i=0으로 선언되어 있는데 좌측부터 i≠0이라는 조건이 거짓이므로 우측은 아예 수행이 안된다. 만에하나 좌측이 true이더라도 해도 null.length로 nullpointException발생한다.
+
+7.
+
+![Quiz%20deb9cf15ce0b476d939b8d54c850141b/20201223_163052.jpg](Quiz%20deb9cf15ce0b476d939b8d54c850141b/20201223_163052.jpg)
+
+**8.**
+
+![Quiz%20deb9cf15ce0b476d939b8d54c850141b/20201223_163213.jpg](Quiz%20deb9cf15ce0b476d939b8d54c850141b/20201223_163213.jpg)
+
+1번이 오답인 이유는 a에서 이미 true이므로 첫 번째  System.out.println(A); 값을 출력하고 마친다. 그러므로 밑에 else if가 실행이 안된다. 2번도 마찬가지로 a가 true이므로 A가 출력. 4번은 a,b 모두 false라면 not B가 출력 된다.
+
+9.
+
+![Quiz%20deb9cf15ce0b476d939b8d54c850141b/20201223_163316.jpg](Quiz%20deb9cf15ce0b476d939b8d54c850141b/20201223_163316.jpg)
+
+**10.**
+
+![Quiz%20deb9cf15ce0b476d939b8d54c850141b/20201223_163413.jpg](Quiz%20deb9cf15ce0b476d939b8d54c850141b/20201223_163413.jpg)
+
+protected는 class 선언 앞에 못쓴다.
+
+**11.**
+
+![Quiz%20deb9cf15ce0b476d939b8d54c850141b/20201223_163523.jpg](Quiz%20deb9cf15ce0b476d939b8d54c850141b/20201223_163523.jpg)
+
+20을 출력하기 위해서는 현재 사용 중인 객체 i를 출력해야 한다. 그러므로 this.i가 정답이다. 그냥 i는 바로 위에 있는 지역변수 i를 가지고 온다. 
+
+12.
+
+![Quiz%20deb9cf15ce0b476d939b8d54c850141b/20201223_163722.jpg](Quiz%20deb9cf15ce0b476d939b8d54c850141b/20201223_163722.jpg)
+
+13.
+
+![Quiz%20deb9cf15ce0b476d939b8d54c850141b/20201223_163814.jpg](Quiz%20deb9cf15ce0b476d939b8d54c850141b/20201223_163814.jpg)
+
+**14.**
+
+![Quiz%20deb9cf15ce0b476d939b8d54c850141b/20201223_163944.jpg](Quiz%20deb9cf15ce0b476d939b8d54c850141b/20201223_163944.jpg)
+
+abstract은 재정의를 해야 하고 final은 끝이라는 의미로 재정의 금지라는 의미이다.⇒abstract은 final과 같이 사용(x) 
+
+**15.**
+
+![Quiz%20deb9cf15ce0b476d939b8d54c850141b/20201223_165201.jpg](Quiz%20deb9cf15ce0b476d939b8d54c850141b/20201223_165201.jpg)
+
+super(i);→ 매개변수 하나 있는 부모 생성자를 호출하여 MySub객체 안에는 2*2=4가 저장되지만 코드에는 i값을 출력하는 거기 때문에 Mysub생성자의 i값이므로 결과 값은 2가 출력 된다.  
+
+**16.**
+
+![Quiz%20deb9cf15ce0b476d939b8d54c850141b/20201223_165452.jpg](Quiz%20deb9cf15ce0b476d939b8d54c850141b/20201223_165452.jpg)
+
+매개변수가 없으면 자동으로 매개변수 없는 super();가 호출되고 MySuper클래스 안에 매개변수 없는 MySuper(){} 생성자가 있어야 한다.
+
+17.
+
+![Quiz%20deb9cf15ce0b476d939b8d54c850141b/20201223_165612.jpg](Quiz%20deb9cf15ce0b476d939b8d54c850141b/20201223_165612.jpg)
+
+18.
+
+![Quiz%20deb9cf15ce0b476d939b8d54c850141b/20201223_165659.jpg](Quiz%20deb9cf15ce0b476d939b8d54c850141b/20201223_165659.jpg)
+
+**19.**
+
+```java
+//다음 숫자들을 SELECTION정렬기법을 이용하여 내림차순 정렬하시오.
+//int[] arr ={4, 6, 1, 9, 5, 3, 7};
+
+public class Quiz19 {
+	public static void main(String[] args) {
+		int [ ] arr = { 4, 6, 1, 9, 5, 3, 7};
+		int size = arr.length;
+		//이곳을 완성하시오.
+		//SELECTION SORT 내림차순
+		for(int i=0; i<size-1; i++) {
+			for(int j=i+1; j<size; j++) {
+				if(arr[i] < arr[j]) {
+					int temp = arr[i];
+					arr[i] = arr[j];
+					arr[j] = temp;
+				}
+			}
+		}
+
+		//BUBBLE SORT 내림차순
+//		int bubbleSize = size-1;
+//		for(int i=0; i<bubbleSize; i++) {
+//			for(int j=0; j<bubbleSize-i; j++) {
+//				if(arr[i] > arr[j]) {
+//					int temp = arr[i];
+//					arr[i] = arr[j];
+//					arr[j] = temp;
+//				}
+//			}
+//		}
+		for(int i=0; i<arr.length; i++){
+		    System.out.print(arr[i]);   //arr변수 오타!
+		   System.out.print("\t");
+		}
+		System.out.println();
+
+	}
+
+}
+```
+
+**20.**
+
+```java
+public class Quiz20 {
+	public static void main(String[] args) {
+		int [ ][ ]arr = new int[4][3];
+		/*
+		 * [0][0]에는 1, 
+[1][0]에는 2, 
+[2][0]에는 3, 
+[3][0]에는 4,
+[0][1]에는 5, 
+[1][1]에는 6,
+[2][1]에는 7,
+[3][1]에는 8
+[0][2]에는 9
+[1][2]에는 10.
+[2][2]에는 11,
+[3][2]에는 12가 저장되도록 한다 
+		 */
+		  //TODO이곳을 완성하시오.
+		int num=1;
+		for(int col=0; col<arr[0].length; col++) {
+			for(int row=0; row<arr.length; row++) {
+				arr[row][col] = num++;
+			}
+		}
+		for(int i=0; i<arr.length; i++){
+		   for(int j=0; j<arr[i].length; j++){
+		      System.out.print(arr[ i ][ j ] );
+		  }
+		  System.out.println( );
+		}
+
+	}
+}
+```
