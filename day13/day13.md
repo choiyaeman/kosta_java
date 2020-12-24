@@ -113,35 +113,35 @@ public class CustomerDAOArray implements CustomerDAO{
 
 프로그램이 죽지 않도록 하려면 예외 처리를 해줘야 한다.
 
-![day13%20178acf9c865a4f6bb1f05a7a4182b090/20201224_102936.jpg](day13%20178acf9c865a4f6bb1f05a7a4182b090/20201224_102936.jpg)
+![1](https://user-images.githubusercontent.com/63957819/103101176-b3f2ce80-4659-11eb-9dba-af3d7b31207e.jpg)
 
 insert내부에서 에러발생 try~catch가 있으면 처리 할 건데 그 안쪽에 없죠 insert메소드 호출된 곳으로 ArrayIndexOufOfBoundsException객체가 떠 넘겨진다. 떠 넘겨 지기 전에 메소드를 마무리를 해야 하니깐 ++를 해야 해 하고 3이 되어 떠 넘겨지므로 문제가 되는 것이다. 그래서 안 좋은 코드이다.    =연산자부터 수행하기 전에 2번 인덱스가 없는 거 아니에요? 2번 인덱스가 없어서 ArrayIndex발생을 해도 ++를 하고 예외를 떠 넘겨지는 거다. 그러므로 두 줄 짜리 코드인 custoemrs[cnt] = c; 여기서  cnt++;를 만나지도 못하고 바로 ArrayIndexOfBoundsException이 떠 넘겨지므로 더 안전한 코드이다.
 
 ---
 
-![day13%20178acf9c865a4f6bb1f05a7a4182b090/20201224_110200.jpg](day13%20178acf9c865a4f6bb1f05a7a4182b090/20201224_110200.jpg)
+![2](https://user-images.githubusercontent.com/63957819/103101178-b48b6500-4659-11eb-99c7-952d7aaa51fb.jpg)
 
 오른쪽 끝에는 본사이고 본사에는 본사 형db가 있겠죠? db는 보안 문제 때문에 본사가 아닌 다른 곳 에서는 접속을 못한다. 분당지사, 제주지사는 본사db직접 접속 불가 할 경우, 자료를 요구 한다거나 추가를 한다 거나 하고 싶다면 본사 쪽에 메소드를 만든다. a메소드를 만들고 분산 시스템으로 관리를 할 수 있다. 자바를 이용한 분산 시스템 기술을 RMI(Remote Method Invocation) 원격 메소드 호출 기술이라 한다. 분당지사에서 a();메소드를 마치 자기 것처럼 만드는 기술. 필요하다면 본사의 a를 호출 하면 된다. 제주 쪽 에서도 RMI형태로 제공해주세요~ 자기 제주 메소드 만들면서 분당의 메소드를 호출 받을 수 있는 거다. 분당지사에서 본사의 메소드를 호출하면 그 메소드가 제대로 호출 된 건지 알 길이 없다. 그래서 예외 처리를 하는데 a메서드의 호출하는 부분에 catch처리를 한다. 실패라는 메시지를 출력하게 하고 분당에서 a메소드를 호출 했을 때 정상 성공이 되지 않으면 그 즉시 catch구문에 와서 본사 콘솔이 출력 된다. 이건 잘못 설계한 코드이다. 분당에서 호출하면 분당에서 콘솔이 보여야 된다. 본사의 try~catch구문을 막고 a메서드 선언부에 throws로 예외를 떠 넘긴다. 그러면 분당 쪽에서 자기가 try~catch를 해줘야 한다. 실패를 출력하고 실패를 하였을 경우 출력 되는 콘솔은 분당 쪽에서 실행된다.
 
-![day13%20178acf9c865a4f6bb1f05a7a4182b090/20201224_110255.jpg](day13%20178acf9c865a4f6bb1f05a7a4182b090/20201224_110255.jpg)
+![3](https://user-images.githubusercontent.com/63957819/103101180-b523fb80-4659-11eb-9365-443f132bc5a2.jpg)
 
 기록이 양쪽에서 실패 메시지를 다 보고 싶으면 본사 쪽의 try~catch를 살린다. 본사 쪽에서 실패 메시지를 볼 수 있고 그냥 끝나는게 아니라 다시 한번 throw(강제예외 발생) e;를 한다. e라는 예외 처리용 try~catch가 없죠? 그러면 e가 throws로 넘어가게 된다. 
 
-![day13%20178acf9c865a4f6bb1f05a7a4182b090/20201224_113222.jpg](day13%20178acf9c865a4f6bb1f05a7a4182b090/20201224_113222.jpg)
+![4](https://user-images.githubusercontent.com/63957819/103101181-b5bc9200-4659-11eb-9d16-fb63f0da2b5b.jpg)
 
 분당지사가 b라는 메소드를 만들어 뒀는데 본사와 일도 해야 하고 자기 지사에 db가 있다고 하자. 자기와의 db와도 일 해야 한다. sqlException이 발생할 수 있으므로 try~catch구문으로 실패시 메시지 출력하게 했고 콘솔에 출력 되는 결과를 본사에서 보낸 실패인지 자기 쪽에서 보낸 실패인지 알 수 가없다.  메시지를 달리하는 방법밖에 없다. 메시지를 만들 때 본사 쪽에서는 throw enw SQLException으로 객체 생성하고 생성시 생성자 인자로 예외 메시지를 설정 할 수 있다. throw 강제 예외 발생한다. e라는거하고 new키워드 객체 생성하는거 차이는 e는 기존객체를 강제 new는 새로운객체를 만들어서 강제 예외 발생하는 코드이다. sqlexception객체는 새로만든 객체가 throws로 전달 되는 거다. 분당에서는 e.getMessage()로 하면 생성자로 만들어진 인자 본사실패 메시지가 분당 지사에서 출력 되게 만들 수 있다. getMessage메소드를 통해 상세 메시지를 가져 올 수 있다.
 
-![day13%20178acf9c865a4f6bb1f05a7a4182b090/20201224_113257.jpg](day13%20178acf9c865a4f6bb1f05a7a4182b090/20201224_113257.jpg)
+![5](https://user-images.githubusercontent.com/63957819/103101182-b5bc9200-4659-11eb-8c45-48b494dcb7d0.jpg)
 
 분당의 입장에서 try~catch가 두번이나 있으니 지저분하다. b메소드에서 a메소드를 호출하고 try~catch를 한번에 묶음 처리로 여러 다중catch를 할 수 있지 않을까? catch(SQLExeption e) 하나로 잡는다. 이렇게 try~catch하나로 묶음 처리로 할 수 있다. 근데 catch입장에서는 모호하다. 하나로 몰아가게 되면 메시지 구분은 할 수 있으나 catch입장에서 분당에서 catch가 된 건지 본사에서 catch가 된건지 구분할 수 가 없다. 사용자 임의로 클래스를 만들듯이 만들 수는 있으나 exception클래스를 만들 때는 Exception으로 부터 상속을 받고 아니면 SQLException을 상속 받는다. 
 
 ---
 
-![day13%20178acf9c865a4f6bb1f05a7a4182b090/Untitled.png](day13%20178acf9c865a4f6bb1f05a7a4182b090/Untitled.png)
+![6](https://user-images.githubusercontent.com/63957819/103101183-b6552880-4659-11eb-8351-78283a043031.png)
 
-![day13%20178acf9c865a4f6bb1f05a7a4182b090/Untitled%201.png](day13%20178acf9c865a4f6bb1f05a7a4182b090/Untitled%201.png)
+![7](https://user-images.githubusercontent.com/63957819/103101184-b6552880-4659-11eb-99db-939a7234b3b9.png)
 
-![day13%20178acf9c865a4f6bb1f05a7a4182b090/Untitled%202.png](day13%20178acf9c865a4f6bb1f05a7a4182b090/Untitled%202.png)
+![8](https://user-images.githubusercontent.com/63957819/103101186-b6edbf00-4659-11eb-839a-e5faa989d59b.png)
 
 ```java
 package com.my.exception;
@@ -543,7 +543,7 @@ public class CustomerDAOTest {
 
 ---
 
-![day13%20178acf9c865a4f6bb1f05a7a4182b090/20201224_141840.jpg](day13%20178acf9c865a4f6bb1f05a7a4182b090/20201224_141840.jpg)
+![9](https://user-images.githubusercontent.com/63957819/103101187-b6edbf00-4659-11eb-8913-cc1821a24893.jpg)
 
 hashCode : 객체 메모리 정보 값. →A,B가 갖고 있는 메소드가 아니라 Object의 영역에서 지원하는 메소드이다.
 
@@ -555,13 +555,13 @@ toString : 객체의 정보값을 문자열 형태로 반환→클래스이름 @
 
 equals: Object의 equals 메소드는 ==와 같다.
 
-![day13%20178acf9c865a4f6bb1f05a7a4182b090/Untitled%203.png](day13%20178acf9c865a4f6bb1f05a7a4182b090/Untitled%203.png)
+![10](https://user-images.githubusercontent.com/63957819/103101188-b7865580-4659-11eb-972c-a6276d23b840.png)
 
-![day13%20178acf9c865a4f6bb1f05a7a4182b090/Untitled%204.png](day13%20178acf9c865a4f6bb1f05a7a4182b090/Untitled%204.png)
+![11](https://user-images.githubusercontent.com/63957819/103101189-b7865580-4659-11eb-8d37-e34d1301d65c.png)
 
-![day13%20178acf9c865a4f6bb1f05a7a4182b090/Untitled%205.png](day13%20178acf9c865a4f6bb1f05a7a4182b090/Untitled%205.png)
+![12](https://user-images.githubusercontent.com/63957819/103101191-b81eec00-4659-11eb-859f-82e08c181544.png)
 
-![day13%20178acf9c865a4f6bb1f05a7a4182b090/Untitled%206.png](day13%20178acf9c865a4f6bb1f05a7a4182b090/Untitled%206.png)
+![13](https://user-images.githubusercontent.com/63957819/103101192-b81eec00-4659-11eb-8584-c13f16bf5168.png)
 
 ```java
 class A { //class A extends Object로 바뀜
@@ -656,9 +656,9 @@ public class ObjectTest {
 1. 두 개의 메소드를 각각
 2. Object타입의 매개변수를 받는 메소드
 
-![day13%20178acf9c865a4f6bb1f05a7a4182b090/20201224_172057.jpg](day13%20178acf9c865a4f6bb1f05a7a4182b090/20201224_172057.jpg)
+![14](https://user-images.githubusercontent.com/63957819/103101194-b8b78280-4659-11eb-87c7-18afe5eab0e2.jpg)
 
-![day13%20178acf9c865a4f6bb1f05a7a4182b090/20201224_154636.jpg](day13%20178acf9c865a4f6bb1f05a7a4182b090/20201224_154636.jpg)
+![15](https://user-images.githubusercontent.com/63957819/103101195-b8b78280-4659-11eb-8542-149940b6147c.jpg)
 
 a1이 test 메소드 Object obj1에 전달 a1이 참조하는 객체와 obj1이 참조하고 있는 객체는 같다. equals메소드에서 매개변수 obj가 있는데 역 추적해서 보면 test 메소드에 a2객체가 두 번째 매개변수로 전달이 되고 equals메소드의 인자로 쓰인 거죠. 매개변수로 쓰이는 obj2는 역 추적 해서 가면 a2와 같은 객체를 참조.
 
@@ -666,21 +666,21 @@ a1,obj1,this 다 같은 객체를 참조
 
 a2,obj2,obj 다 같은 객체를 참조
 
-![day13%20178acf9c865a4f6bb1f05a7a4182b090/20201224_183120.jpg](day13%20178acf9c865a4f6bb1f05a7a4182b090/20201224_183120.jpg)
+![16](https://user-images.githubusercontent.com/63957819/103101196-b9501900-4659-11eb-9a66-cf24098cdcfb.jpg)
 
 a1이 Object타입의 obj1라는 매개변수에 전달,  b1은 Object타입의 obj2라는 매개변수에 전달이 되어 upcasting한다. obj1.equals(obj2)→ a1에 b1을 비교 그래서 A클래스에서 정의된 equals메소드로 가서 Object타입의 obj는 b1이 되는 것이고, if(obj instanceof A) → obj가 A타입의 객체 일때만이므로 b1이 A타입의 객체가 아니므로 false로 리턴된다. → 클래스exception발생!
 
 출력 할 때 참조 변수의 toString메소드가 자동 호출이 된다.
 
-![day13%20178acf9c865a4f6bb1f05a7a4182b090/Untitled%207.png](day13%20178acf9c865a4f6bb1f05a7a4182b090/Untitled%207.png)
+![17](https://user-images.githubusercontent.com/63957819/103101197-b9e8af80-4659-11eb-8c1d-b8f573618899.png)
 
-![day13%20178acf9c865a4f6bb1f05a7a4182b090/Untitled%208.png](day13%20178acf9c865a4f6bb1f05a7a4182b090/Untitled%208.png)
+![18](https://user-images.githubusercontent.com/63957819/103101198-b9e8af80-4659-11eb-8ac6-8ac1ba9b24a8.png)
 
-![day13%20178acf9c865a4f6bb1f05a7a4182b090/Untitled%209.png](day13%20178acf9c865a4f6bb1f05a7a4182b090/Untitled%209.png)
+![19](https://user-images.githubusercontent.com/63957819/103101199-ba814600-4659-11eb-855f-463cb0778d2a.png)
 
-![day13%20178acf9c865a4f6bb1f05a7a4182b090/20201224_161336.jpg](day13%20178acf9c865a4f6bb1f05a7a4182b090/20201224_161336.jpg)
+![20](https://user-images.githubusercontent.com/63957819/103101201-ba814600-4659-11eb-88bc-c5b6d5a8fd15.jpg)
 
-![day13%20178acf9c865a4f6bb1f05a7a4182b090/20201224_161214.jpg](day13%20178acf9c865a4f6bb1f05a7a4182b090/20201224_161214.jpg)
+![21](https://user-images.githubusercontent.com/63957819/103101204-bb19dc80-4659-11eb-9503-a07442165015.jpg)
 
 원래 객체의 a의 오버라이딩된 toString메소드가 호출된다.
 
