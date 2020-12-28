@@ -143,13 +143,13 @@ public class StringStringBuffer {
 }
 ```
 
-![day14%2013799f9fec4a4b38b6bf5bbf282b0eee/20201228_095041.jpg](day14%2013799f9fec4a4b38b6bf5bbf282b0eee/20201228_095041.jpg)
+![1](https://user-images.githubusercontent.com/63957819/103213919-79877b00-4952-11eb-9041-841cb98b57a0.jpg)
 
-![day14%2013799f9fec4a4b38b6bf5bbf282b0eee/20201228_095752.jpg](day14%2013799f9fec4a4b38b6bf5bbf282b0eee/20201228_095752.jpg)
+![2](https://user-images.githubusercontent.com/63957819/103213921-7ab8a800-4952-11eb-97d0-d07ea7894b43.jpg)
 
 **정규 표현식**
 
-![day14%2013799f9fec4a4b38b6bf5bbf282b0eee/Untitled.png](day14%2013799f9fec4a4b38b6bf5bbf282b0eee/Untitled.png)
+![3](https://user-images.githubusercontent.com/63957819/103213922-7b513e80-4952-11eb-80a1-1f6f054f4de1.png)
 
 ```java
 package day14;
@@ -192,7 +192,7 @@ public class Wrapper {
 
 책 490p 11번째 줄 클래스 실행 순서
 
-![day14%2013799f9fec4a4b38b6bf5bbf282b0eee/20201228_140247.jpg](day14%2013799f9fec4a4b38b6bf5bbf282b0eee/20201228_140247.jpg)
+![4](https://user-images.githubusercontent.com/63957819/103213924-7b513e80-4952-11eb-9e0e-bc367ef98a4c.jpg)
 
 Dynamic Load = 실행 시 필요한 자원을  JVM으로 로드
 
@@ -262,11 +262,11 @@ public class ClassTest {
 
 메인메서드 호출되기 전 상태 로드 될 클래스 개수는 ClassTest, String, Scanner, System 클래스, Class, Object, ClassNotfound, InstantiationException, IllegalAccessException 총 9개클래스가 로드 되어 있다. 메인메서드 호출된 후에는 인자(className)문자열에 해당하는 클래스 총 10개가 로드된다.
 
-![day14%2013799f9fec4a4b38b6bf5bbf282b0eee/20201228_141700.jpg](day14%2013799f9fec4a4b38b6bf5bbf282b0eee/20201228_141700.jpg)
+![5](https://user-images.githubusercontent.com/63957819/103213925-7be9d500-4952-11eb-8071-04afac1da642.jpg)
 
 /a.do /b.do /c.do /d.do 이런 다양한 요청들이 들어오게되면 요청을 처리해줄 프로그램을 만드는데 이렇게 코드를 한다 해보자 if("/a.do요청") a타입 객체를 생성해라 A a = new A().. b~~, c~~, d~~ 있다고 하자 변수의 이름도 많아질 수 밖에 없다. 정말 안 좋은 코드이다. 이 요청이 a~d까지 끝나는게 아니라 e, x, y도 요청이 될 수 있다. 확장성을 고려해야 한다.
 
-![day14%2013799f9fec4a4b38b6bf5bbf282b0eee/20201228_141850.jpg](day14%2013799f9fec4a4b38b6bf5bbf282b0eee/20201228_141850.jpg)
+![6](https://user-images.githubusercontent.com/63957819/103213926-7c826b80-4952-11eb-869f-1b3794e11730.jpg)
 
  문서를 하나 만들어두자 웹 서버 안쪽에 xml파일 /a.do=A /b.do=B, /c.do=C 에 해당하는 클래스는 A, B, C야 ~~ 구분하지 말고 Class.forName()을 이용해서 요청 url값을 인자로 사용하면 사용자가 /a.do라고 했을 때 class.forName() 메서드의 인자가 자동 대입이 되고  /b.do가 요청이 된다고 하면 ClassName이름을 찾고 그 클래스를 이름을 가지고 ClassforName인자로 사용하게 되고 추가되는 것은 파일에 더 추가만 해주면 된다.
 
@@ -336,11 +336,11 @@ public class ClassTest {
 }
 ```
 
-![day14%2013799f9fec4a4b38b6bf5bbf282b0eee/Untitled%201.png](day14%2013799f9fec4a4b38b6bf5bbf282b0eee/Untitled%201.png)
+![7](https://user-images.githubusercontent.com/63957819/103213927-7c826b80-4952-11eb-8586-35ae4d0a46b8.png)
 
 arrayList가 갖고있는 메서드들
 
-![day14%2013799f9fec4a4b38b6bf5bbf282b0eee/Untitled%202.png](day14%2013799f9fec4a4b38b6bf5bbf282b0eee/Untitled%202.png)
+![8](https://user-images.githubusercontent.com/63957819/103213928-7d1b0200-4952-11eb-92c4-5b0de9854760.png)
 
 ---
 
@@ -443,8 +443,8 @@ public class DateCalendar {
 }
 ```
 
-![day14%2013799f9fec4a4b38b6bf5bbf282b0eee/20201228_152519.jpg](day14%2013799f9fec4a4b38b6bf5bbf282b0eee/20201228_152519.jpg)
+![9](https://user-images.githubusercontent.com/63957819/103213929-7d1b0200-4952-11eb-9cf6-15a417ab7a17.jpg)
 
-![day14%2013799f9fec4a4b38b6bf5bbf282b0eee/Untitled%203.png](day14%2013799f9fec4a4b38b6bf5bbf282b0eee/Untitled%203.png)
+![10](https://user-images.githubusercontent.com/63957819/103213931-7db39880-4952-11eb-8799-ae8c9fe12449.png)
 
 캘린더 생성자는 왜 존재할까? 자식(GregorianCalendar)을 위해 존재
