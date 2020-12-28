@@ -4,7 +4,7 @@
 
 - 객체가 한번 만들어지면 문자열 내용이 변경 불가
 - ""로 대입가능. 사용법) String a = "hello";
-- + 연산으로 문자열 연결 a+"java"
+- 플러스 연산으로 문자열 연결 a+"java"
 - equals()를 overriding해둠→ **문자열 내용 비교**
 
 ### **StringBuffer** → 객체내용 가변
