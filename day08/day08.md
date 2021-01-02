@@ -75,7 +75,7 @@ public class StaticTest {
 }**
 ```
 
-![day08%20c1a979cccb1c41f59faa9b75984fcd63/Untitled.png](day08%20c1a979cccb1c41f59faa9b75984fcd63/Untitled.png)
+![1](https://user-images.githubusercontent.com/63957819/103460277-4c730800-4d58-11eb-80c8-699608587cdb.png)
 
 final로 선언한 변수는 값 변경 불가
 
@@ -89,9 +89,9 @@ src오른쪽클릭>package>이름지정 → 패키지별로 카테고리를 만�
 
 java.util, java.sql패키지에 둘 다 Date가 있는데 서로 다른 Date이다.
 
-![day08%20c1a979cccb1c41f59faa9b75984fcd63/Untitled%201.png](day08%20c1a979cccb1c41f59faa9b75984fcd63/Untitled%201.png)
+![2](https://user-images.githubusercontent.com/63957819/103460278-4d0b9e80-4d58-11eb-86cf-eeed85381d8a.png)
 
-![day08%20c1a979cccb1c41f59faa9b75984fcd63/Untitled%202.png](day08%20c1a979cccb1c41f59faa9b75984fcd63/Untitled%202.png)
+![3](https://user-images.githubusercontent.com/63957819/103460279-4d0b9e80-4d58-11eb-892e-ca764f54faea.png)
 
 ## **접근제어자**
 
@@ -194,7 +194,7 @@ public class France {
 }
 ```
 
-![day08%20c1a979cccb1c41f59faa9b75984fcd63/20201217_114132.jpg](day08%20c1a979cccb1c41f59faa9b75984fcd63/20201217_114132.jpg)
+![4](https://user-images.githubusercontent.com/63957819/103460280-4da43500-4d58-11eb-9bd7-6fb5724fcbbb.jpg)
 
 통로를 통해서만 population변수를 선언 외부에서 직접 접근x, 대신 메서드를 통해서 접근을 하면 된다. 대표 메서드 set메서드와 get메서드를 이용. capital 변수는 객체의 바깥쪽에 있어 직접 접근해서 쓸 수 있다. 은닉은 자료를 외부에 노출되지 않게 가리는 것을 말한다. 은닉된 정보를 사용해야 하는데 그 방법을 제공하는 것을 캡슐화라 한다.
 
@@ -204,18 +204,18 @@ default상태와 protected는 안 쓰는 걸 추천. private, pubilc 둘 중에 
 
 ---
 
-![day08%20c1a979cccb1c41f59faa9b75984fcd63/Untitled%203.png](day08%20c1a979cccb1c41f59faa9b75984fcd63/Untitled%203.png)
+![5](https://user-images.githubusercontent.com/63957819/103460282-4e3ccb80-4d58-11eb-8577-8b6029d5c161.png)
 
-![day08%20c1a979cccb1c41f59faa9b75984fcd63/Untitled%204.png](day08%20c1a979cccb1c41f59faa9b75984fcd63/Untitled%204.png)
+![6](https://user-images.githubusercontent.com/63957819/103460283-4ed56200-4d58-11eb-9722-5e9e0ad79a52.png)
 
 vo 패키지 : ValueObject용(값이 저장될 객체) 클래스를 저장
 dao패키지: DataAccessObject용(값이 처리할 객체) 클래스를 저장 ⇒CRUD(생성, 수정, 조회, 삭제)
 
-![day08%20c1a979cccb1c41f59faa9b75984fcd63/Untitled%205.png](day08%20c1a979cccb1c41f59faa9b75984fcd63/Untitled%205.png)
+![7](https://user-images.githubusercontent.com/63957819/103460285-4ed56200-4d58-11eb-95fe-091b42baeb06.png)
 
-![day08%20c1a979cccb1c41f59faa9b75984fcd63/Untitled%206.png](day08%20c1a979cccb1c41f59faa9b75984fcd63/Untitled%206.png)
+![8](https://user-images.githubusercontent.com/63957819/103460286-4f6df880-4d58-11eb-8be5-40cf24491940.png)
 
-![day08%20c1a979cccb1c41f59faa9b75984fcd63/Untitled%207.png](day08%20c1a979cccb1c41f59faa9b75984fcd63/Untitled%207.png)
+![9](https://user-images.githubusercontent.com/63957819/103460287-4f6df880-4d58-11eb-98ca-63baddfe0999.png)
 
 오른쪽 클릭> Source> 1.Generate Getters and Setters
 
