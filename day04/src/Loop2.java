@@ -1,4 +1,4 @@
-public class Loop2 {
+public class Loop2 { 
 	public static void main(String[] args) {
 		//TODO 10,9,8,7,6,5,4,3,2,1을 출력하시오
 		int num = 10;
