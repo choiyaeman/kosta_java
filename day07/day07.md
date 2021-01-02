@@ -10,15 +10,15 @@
     console창에 오류->utf-8
     - locale ko_KR -encoding UTF-8 -charset UTF-8 -docencoding UTF-8 을 복사해서 아까 위의 경로에서 Vm option에 붙여 넣는다.
 
-    ![day07%201310a4a274544ed2a02bf23eb108141b/Untitled.png](day07%201310a4a274544ed2a02bf23eb108141b/Untitled.png)
+![1](https://user-images.githubusercontent.com/63957819/103460155-7415a080-4d57-11eb-94dc-77829ffcfe87.png)
 
-    ![day07%201310a4a274544ed2a02bf23eb108141b/Untitled%201.png](day07%201310a4a274544ed2a02bf23eb108141b/Untitled%201.png)
+![2](https://user-images.githubusercontent.com/63957819/103460156-74ae3700-4d57-11eb-9dd4-b1792039f87d.png)
 
-    ![day07%201310a4a274544ed2a02bf23eb108141b/Untitled%202.png](day07%201310a4a274544ed2a02bf23eb108141b/Untitled%202.png)
+![3](https://user-images.githubusercontent.com/63957819/103460157-7546cd80-4d57-11eb-8f3d-8a6fe645da75.png)
 
-    ![day07%201310a4a274544ed2a02bf23eb108141b/Untitled%203.png](day07%201310a4a274544ed2a02bf23eb108141b/Untitled%203.png)
+![4](https://user-images.githubusercontent.com/63957819/103460158-75df6400-4d57-11eb-8a3f-abbe3b36f97b.png)
 
-    ![day07%201310a4a274544ed2a02bf23eb108141b/Untitled%204.png](day07%201310a4a274544ed2a02bf23eb108141b/Untitled%204.png)
+![5](https://user-images.githubusercontent.com/63957819/103460159-75df6400-4d57-11eb-8dbd-83fbd898ad9d.png)
 
     ```java
     package day07;
@@ -72,7 +72,7 @@
     }
     ```
 
-    ![day07%201310a4a274544ed2a02bf23eb108141b/20201216_110058.jpg](day07%201310a4a274544ed2a02bf23eb108141b/20201216_110058.jpg)
+![6](https://user-images.githubusercontent.com/63957819/103460160-7677fa80-4d57-11eb-8e70-c20b82a8aff1.jpg)
 
     java -cp ThisTest
 
@@ -242,7 +242,7 @@
     2) this()는 동일한 클래스 내의 다른 생성자를 호출할 때 사용한다
     3) this()는 반드시 생성자의 첫 번째 문장에서 사용되어야 한다 : this()의 호출문은 반드시 생성자 코드의 첫 번째 문장이 되어야 한다. 그렇지 않을 경우, 컴파일 오류가 발생하게 된다. 즉 ths 생성자 호출은 생성자의 첫 줄 첫 머리에 와야한다
 
-    ![day07%201310a4a274544ed2a02bf23eb108141b/20201216_143003.jpg](day07%201310a4a274544ed2a02bf23eb108141b/20201216_143003.jpg)
+![7](https://user-images.githubusercontent.com/63957819/103460161-77109100-4d57-11eb-8a7a-04c5e97dbf36.jpg))
 
     employees 지역변수 stack 영역에 선언이고 Employee 배열 타입이면 참조 할 수 있다.
 
@@ -297,7 +297,7 @@
 
     [Java Platform SE 8](https://docs.oracle.com/javase/8/docs/api/index.html)
 
-    ![day07%201310a4a274544ed2a02bf23eb108141b/Untitled%205.png](day07%201310a4a274544ed2a02bf23eb108141b/Untitled%205.png)
+![8](https://user-images.githubusercontent.com/63957819/103460162-77109100-4d57-11eb-84ba-4af79e6463b7.png)
 
     >> 오버로드
 
@@ -314,7 +314,7 @@
 
     **정적 멤버와 static**
 
-    ![day07%201310a4a274544ed2a02bf23eb108141b/Untitled%206.png](day07%201310a4a274544ed2a02bf23eb108141b/Untitled%206.png)
+![9](https://user-images.githubusercontent.com/63957819/103460164-77a92780-4d57-11eb-93f1-c5a8b55895af.png)
 
     정적은 '고정된'이란 의미를 가지고 있다.
 
@@ -322,7 +322,7 @@
 
     static은 객체와 무관하다. 메서드 타입의 객체를 생성하지 않고 클래스이름. 으로 직접 쓰는 방식
 
-    ![day07%201310a4a274544ed2a02bf23eb108141b/20201216_170420.jpg](day07%201310a4a274544ed2a02bf23eb108141b/20201216_170420.jpg)
+![10](https://user-images.githubusercontent.com/63957819/103460165-77a92780-4d57-11eb-9a8e-0d7d679e5894.jpg)
 
     사용법: 클래스이름.스태틱멤버
     ⇒ static필드 = 클래스 변수
