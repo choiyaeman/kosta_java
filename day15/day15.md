@@ -14,7 +14,7 @@ arr[3] = 40;
 
 ---
 
-![day15%20043d94f2edee40299bace6a7d210f8ea/20201229_110740.jpg](day15%20043d94f2edee40299bace6a7d210f8ea/20201229_110740.jpg)
+![1](https://user-images.githubusercontent.com/63957819/103459670-56930780-4d54-11eb-99af-c8f6fb7d7b35.jpg)
 
 크기를 가변적으로 늘릴 수 있다.  java.util 패키지에서 제공
 
@@ -72,9 +72,9 @@ Hashtable와 HashMap의 차이점은? Hashtable은 스레드 동기화 되어있
 
 TreeSet은 인덱스가 없이 정렬이 되는 api이다. TreeMap에도 정렬을 해준다.
 
-![day15%20043d94f2edee40299bace6a7d210f8ea/Untitled.png](day15%20043d94f2edee40299bace6a7d210f8ea/Untitled.png)
+![2](https://user-images.githubusercontent.com/63957819/103459672-57c43480-4d54-11eb-9bf0-a612bb0e3e32.png)
 
-![day15%20043d94f2edee40299bace6a7d210f8ea/Untitled%201.png](day15%20043d94f2edee40299bace6a7d210f8ea/Untitled%201.png)
+![3](https://user-images.githubusercontent.com/63957819/103459673-57c43480-4d54-11eb-902b-fcba3a4a9e10.png)
 
 ---
 
@@ -591,4 +591,4 @@ public class MainPrinter {
 }
 ```
 
-![day15%20043d94f2edee40299bace6a7d210f8ea/Untitled%202.png](day15%20043d94f2edee40299bace6a7d210f8ea/Untitled%202.png)
+![4](https://user-images.githubusercontent.com/63957819/103459674-585ccb00-4d54-11eb-97df-0f1dd3f1a72a.png)
