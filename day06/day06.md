@@ -207,7 +207,7 @@ non-static field  heap              o                            객체생성   
 
 **자바프로그램 실행구조**
 
-![day06%20142d802132654244b994d34da0894f20/Untitled.png](day06%20142d802132654244b994d34da0894f20/Untitled.png)
+![1](https://user-images.githubusercontent.com/63957819/103460078-d28e4f00-4d56-11eb-8076-e9d675330f11.png)
 
 - **JVM이란?**
 
@@ -217,7 +217,7 @@ Java Virtual MachineJAVA와 OS 사이에서 중계자 역할JAVA가 OS에 구애
 
 프로그램이 실행되면, JVM은 OS으로부터 이 프로그램이 필요로 하는 메모리를 할당받고, JVM은 이 메모리를 용도에 따라 여러 영역으로 나누어 관리한다.
 
-![day06%20142d802132654244b994d34da0894f20/Untitled%201.png](day06%20142d802132654244b994d34da0894f20/Untitled%201.png)
+![2](https://user-images.githubusercontent.com/63957819/103460079-d326e580-4d56-11eb-9f8f-08f8caf256b5.png)
 
 - JAVA Source : 사용자가 작성한 JAVA 코드
 - JAVA Compiler : JAVA 코드를 Byte Code로 변환시켜주는 기능
@@ -225,7 +225,7 @@ Java Virtual MachineJAVA와 OS 사이에서 중계자 역할JAVA가 OS에 구애
 - Execution Engine : Byte Code를 실행 가능하게 해석해주는 기능
 - Runtime Data Area : 프로그램을 수행하기 위해 OS에서 할당 받은 메모리 공간
 
-![day06%20142d802132654244b994d34da0894f20/Untitled%202.png](day06%20142d802132654244b994d34da0894f20/Untitled%202.png)
+![3](https://user-images.githubusercontent.com/63957819/103460080-d3bf7c00-4d56-11eb-96fa-578664c3ab4f.png)
 
 ---
 
@@ -299,7 +299,7 @@ day6>java -cp bin WatchTV
 
 6) main()호출됨
 
-![day06%20142d802132654244b994d34da0894f20/Untitled%203.png](day06%20142d802132654244b994d34da0894f20/Untitled%203.png)
+![4](https://user-images.githubusercontent.com/63957819/103460081-d3bf7c00-4d56-11eb-9d52-7ed33c883dfb.png)
 
 **-Class area영역** 
 
@@ -368,9 +368,9 @@ public class CallByValue {
 
 - 자바에서 배열은 무조건 참조형 테스트메서드 매개변수 arr에 메인이 쓰였던 arr이 대입 되므로 그대로 쓰여진다. test메서드 arr main메서드 arr 같은 값을 갖는다. 1→99 그리고 test메서드 종료하고 메인에서 test출력
 
-![day06%20142d802132654244b994d34da0894f20/Untitled%204.png](day06%20142d802132654244b994d34da0894f20/Untitled%204.png)
+![5](https://user-images.githubusercontent.com/63957819/103460082-d4581280-4d56-11eb-9206-633a76112d6a.png)
 
-![day06%20142d802132654244b994d34da0894f20/Untitled%205.png](day06%20142d802132654244b994d34da0894f20/Untitled%205.png)
+![6](https://user-images.githubusercontent.com/63957819/103460083-d4f0a900-4d56-11eb-8eb4-c5c2d5eb5d6c.png)
 
 **-Class영역**
 
