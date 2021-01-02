@@ -200,13 +200,13 @@ public class FileIO {
 }
 ```
 
-![day17%207b044a90e0e74734a1283f8a2fac6416/Untitled.png](day17%207b044a90e0e74734a1283f8a2fac6416/Untitled.png)
+![1](https://user-images.githubusercontent.com/63957819/103459690-7296a900-4d54-11eb-9ab4-a2d918318cc6.png)
 
 a.txt파일은 day17프로젝트 경로에 만들어진다. 
 
 eclipse에서 실행하는 거랑 자바 명령어로 D:~~day17>java -cp bin FileIO 방법과 똑같다. 실행 경로 기준점이 day17 실행을 했기 때문에 a.txt파일 만들어진 경로도 day17 프로젝트 경로에 만들어지는 거다.
 
-![day17%207b044a90e0e74734a1283f8a2fac6416/Untitled%201.png](day17%207b044a90e0e74734a1283f8a2fac6416/Untitled%201.png)
+![2](https://user-images.githubusercontent.com/63957819/103459691-73c7d600-4d54-11eb-9e36-d63cf2332867.png)
 
 close()는 자원과의 연결을 끊기 위해서 필요한 메소드이다.
 
@@ -216,11 +216,11 @@ fr이 참조하고 있는 객체가 있고 그 객체는 FileReader타입 객체
 
 fr과 연결되어 있는 자원을 끊는 것을 close라 한다. catch구문에서도 close를 해주는게 바람직하다. 그러나 각각 쓸 필요 없이 맨 아래 finally에 close해주면 된다. 컴파일이 성공되나 실행시에 nullpointexception에 빠질 수 있는 코드이므로 fr이 null 아닐 때만 close를 해라! 마지막에도 try~catch 해준다.
 
-![day17%207b044a90e0e74734a1283f8a2fac6416/Untitled%202.png](day17%207b044a90e0e74734a1283f8a2fac6416/Untitled%202.png)
+![3](https://user-images.githubusercontent.com/63957819/103459692-74606c80-4d54-11eb-8d02-e125fb9d9c1f.png)
 
 전달된 값이 배열 총 8개방중에  arr의 2번 인덱스부터 3개 만큼 넣는다. read메서드의 리턴 타입은 int타입. 사이즈 값은 3이다.
 
-![day17%207b044a90e0e74734a1283f8a2fac6416/Untitled%203.png](day17%207b044a90e0e74734a1283f8a2fac6416/Untitled%203.png)
+![4](https://user-images.githubusercontent.com/63957819/103459693-74606c80-4d54-11eb-9b48-a6ebd8614313.png)
 
 위와 동일하게 전달된 값이 배열 총 8개 방 중에  arr의 2번 인덱스부터 3개 만큼 넣는다. 사이즈 값은 3이다. read메소드가 한번 더 호출됨으로 a가 없어지고 1 b가 없어지고 2하고 끝 사이즈는 2
 
@@ -284,7 +284,7 @@ public class FileCopy {
 }
 ```
 
-![day17%207b044a90e0e74734a1283f8a2fac6416/Untitled%204.png](day17%207b044a90e0e74734a1283f8a2fac6416/Untitled%204.png)
+![5](https://user-images.githubusercontent.com/63957819/103459694-74f90300-4d54-11eb-9549-5b90686707c5.png)
 
 ```java
 package day17;
