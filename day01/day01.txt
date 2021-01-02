@@ -58,4 +58,4 @@ long보다 float이 바이트 크기는 크지만 지수를 사용하므로 더 
 
 2) 편집
 변수이름:Path
-변수값:%JAVA_HOME%\bin;기존Path값들~~
+변수값:%JAVA_HOME%\bin;기존Path값들~~ 
