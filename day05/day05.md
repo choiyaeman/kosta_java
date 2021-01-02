@@ -1,4 +1,4 @@
-# day05
+# day05 
 
 int[] arr; //배열선언 int arr[];
 
