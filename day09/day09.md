@@ -1,6 +1,6 @@
 # day09
 
-![20201218_092431](https://user-images.githubusercontent.com/63957819/102783965-112f1b80-43df-11eb-8841-1743c0cce69a.jpg)
+![1](https://user-images.githubusercontent.com/63957819/103460351-e8047880-4d58-11eb-90c9-dabc35494923.jpg)
 
 호출순서>
 
@@ -28,7 +28,7 @@ t.a(); t가 참조하고 있는 객체를 따라가서 그 객체가 갖고있�
 
 ---
 
-![day09%20a0e6f6a0172e4cb3995fec336fc6f45b/20201218_093943.jpg](day09%20a0e6f6a0172e4cb3995fec336fc6f45b/20201218_093943.jpg)
+![2](https://user-images.githubusercontent.com/63957819/103460353-e935a580-4d58-11eb-9d85-2873d527a422.jpg)
 
 메인 메서드의 a의 값은 기본형 값인 int타입 10
 
@@ -183,9 +183,9 @@ getId메서드는 public으로 사용되어 있기 때문에 가능한 것이다
 
 2. worksapce 디렉터리를 붙여넣기해서 new Project만들기
 
-![day09%20a0e6f6a0172e4cb3995fec336fc6f45b/Untitled.png](day09%20a0e6f6a0172e4cb3995fec336fc6f45b/Untitled.png)
+![3](https://user-images.githubusercontent.com/63957819/103460355-e9ce3c00-4d58-11eb-96df-11ff6c2da776.png)
 
-![day09%20a0e6f6a0172e4cb3995fec336fc6f45b/Untitled%201.png](day09%20a0e6f6a0172e4cb3995fec336fc6f45b/Untitled%201.png)
+![4](https://user-images.githubusercontent.com/63957819/103460356-ea66d280-4d58-11eb-89b2-34d190493418.png)
 
 ---
 
@@ -318,7 +318,7 @@ public class CustomerDAO {
 }
 ```
 
-![day09%20a0e6f6a0172e4cb3995fec336fc6f45b/20201218_123042.jpg](day09%20a0e6f6a0172e4cb3995fec336fc6f45b/20201218_123042.jpg)
+![5](https://user-images.githubusercontent.com/63957819/103460358-eaff6900-4d58-11eb-82f5-bd89a796772f.jpg)
 
 customerMain이라는 지역변수가 참조하고 있는 객체는 CustomerMain의 클래스 타입 객체
 
@@ -377,7 +377,7 @@ intArray[0]=10;
 
 ---
 
-![day09%20a0e6f6a0172e4cb3995fec336fc6f45b/20201218_152537.jpg](day09%20a0e6f6a0172e4cb3995fec336fc6f45b/20201218_152537.jpg)
+![6](https://user-images.githubusercontent.com/63957819/103460359-eaff6900-4d58-11eb-871e-536943e3635b.jpg)
 
 name = " "; → 이것도 문자열이다.
 
@@ -391,7 +391,7 @@ String name2의 오문정은 String name1 오문정과 같으므로 같이 참�
 
 연결 고리가 끊어진 객체는 가비지컬랙션 대상이 된다 → JVM역할중 가비지 역할이 있다. 그 역할은 우선순위가 낮다라는 것은 가비지컬랙션을 안 할 수도 있다. 쓸모없는 메모리가 JVM에 쌓이고 메모리가 과부하 되고 시스템이 죽어 버릴 수도 있다. 수행 시 메모리 수거해감
 
-![day09%20a0e6f6a0172e4cb3995fec336fc6f45b/20201218_153808.jpg](day09%20a0e6f6a0172e4cb3995fec336fc6f45b/20201218_153808.jpg)
+![7](https://user-images.githubusercontent.com/63957819/103460360-eb97ff80-4d58-11eb-8fbe-f5f435a670ea.jpg)
 
 내용이 같은가 비교하려면 equals를 쓴다. 문자열 같은 경우 비교하는 경우가 훨씬 많다.
 
@@ -455,7 +455,7 @@ public class SingletoneTest {
 }
 ```
 
-![day09%20a0e6f6a0172e4cb3995fec336fc6f45b/20201218_165832.jpg](day09%20a0e6f6a0172e4cb3995fec336fc6f45b/20201218_165832.jpg)
+![8](https://user-images.githubusercontent.com/63957819/103460361-eb97ff80-4d58-11eb-8cc6-8cc2d879a25c.jpg)
 
 sa라는 변수는 A클래스 타입 초기화가 자동 되는 값이 heap영역에 A타입의 객체 이 객체를 sa가 참조 되게 하는 것이다. 참조형 변수라면 stack에서도 class area에서도 참조가 될 수 있다.
 
