@@ -13,11 +13,11 @@ public class CustomerController {
 
 CustmerController has a CustomerSerivce, has a CustomerSuccessView, has a FailView → CustomerController가 멤버 변수로 CustomerSerivce, CustomerSuccessView, FailView를 가지고 있다라는 의미
 
-![day18%206382b20b8c654ce285eb6a1a78d2da03/20210104_094120.jpg](day18%206382b20b8c654ce285eb6a1a78d2da03/20210104_094120.jpg)
+![1](https://user-images.githubusercontent.com/63957819/103671203-f1424f00-4fbd-11eb-82b2-c7263c2e0524.jpg)
 
 사원은 사람이다. 고객은 사람이다. 근데 계좌는 사람이다? 논리적인 성립이 안된다. 성립 되지 않는 관계는 상속 관계로 만들면 안된다. IS A 관계가 안됨. HAS A 관계로 풀면 된다. 그러면 멤버 변수로 Person 을 가지면 된다.
 
-![day18%206382b20b8c654ce285eb6a1a78d2da03/Untitled.png](day18%206382b20b8c654ce285eb6a1a78d2da03/Untitled.png)
+![2](https://user-images.githubusercontent.com/63957819/103671208-f1dae580-4fbd-11eb-9e97-0b8b6e5215f3.png)
 
 List 저장소를 삼아서 쓰고 있고 로그인 메뉴를 선택을 하게 되면 Contorller의 login 메소드에서 service의 login 메소드를 호출하고 dao의 selectById메소드 호출 그리고 Service login 메소드로 반환 후 가공한다. Id같으면 Controller에게 전달하고 같지 않다면 예외 발생을 한다.
 
@@ -202,7 +202,7 @@ public class CustomerService {
 
 이 파일은 현재 사용 중인 프로젝트에 저장 되도록 해본다.
 
-![day18%206382b20b8c654ce285eb6a1a78d2da03/Untitled%201.png](day18%206382b20b8c654ce285eb6a1a78d2da03/Untitled%201.png)
+![3](https://user-images.githubusercontent.com/63957819/103671210-f2737c00-4fbd-11eb-906f-4546b6bdcb7f.png)
 
 ---
 
@@ -283,23 +283,23 @@ public class DataIO {
 }
 ```
 
-![day18%206382b20b8c654ce285eb6a1a78d2da03/Untitled%202.png](day18%206382b20b8c654ce285eb6a1a78d2da03/Untitled%202.png)
+![4](https://user-images.githubusercontent.com/63957819/103671213-f30c1280-4fbd-11eb-8484-4d9811b47d67.png)
 
-![day18%206382b20b8c654ce285eb6a1a78d2da03/Untitled%203.png](day18%206382b20b8c654ce285eb6a1a78d2da03/Untitled%203.png)
+![5](https://user-images.githubusercontent.com/63957819/103671215-f3a4a900-4fbd-11eb-8906-41eeb392adc2.png)
 
 크기가 14byte인 것을 볼 수 있다.
 
-![day18%206382b20b8c654ce285eb6a1a78d2da03/Untitled%204.png](day18%206382b20b8c654ce285eb6a1a78d2da03/Untitled%204.png)
+![6](https://user-images.githubusercontent.com/63957819/103671216-f3a4a900-4fbd-11eb-9e02-d626273da7c8.png)
 
 순서를 제대로 모르는 사람은 읽기를 하게 되면 전혀 뜬 끔 없는 자료가 만들어진다.
 
-![day18%206382b20b8c654ce285eb6a1a78d2da03/Untitled%205.png](day18%206382b20b8c654ce285eb6a1a78d2da03/Untitled%205.png)
+![7](https://user-images.githubusercontent.com/63957819/103671217-f43d3f80-4fbd-11eb-8d79-cf850dd459a7.png)
 
 데이터 타입 별로 순서를 알고 있는 사람은 볼 수 있다.
 
 ---
 
-![day18%206382b20b8c654ce285eb6a1a78d2da03/20210104_154621.jpg](day18%206382b20b8c654ce285eb6a1a78d2da03/20210104_154621.jpg)
+![8](https://user-images.githubusercontent.com/63957819/103671218-f43d3f80-4fbd-11eb-95e0-0f023ffb78b8.jpg)
 
 ```java
 ObjectInputStream
@@ -396,9 +396,9 @@ public class ObjectIO {
 }
 ```
 
-![day18%206382b20b8c654ce285eb6a1a78d2da03/Untitled%206.png](day18%206382b20b8c654ce285eb6a1a78d2da03/Untitled%206.png)
+![9](https://user-images.githubusercontent.com/63957819/103671220-f4d5d600-4fbd-11eb-8a71-bc4364edf37e.png)
 
-![day18%206382b20b8c654ce285eb6a1a78d2da03/Untitled%207.png](day18%206382b20b8c654ce285eb6a1a78d2da03/Untitled%207.png)
+![10](https://user-images.githubusercontent.com/63957819/103671222-f4d5d600-4fbd-11eb-8c76-8fcd72a411a3.png)
 
 얼려진 객체의 상태 값을 녹여서 얼려진 시간 값을 보여주는 거다 → 객체 역직렬화
 
@@ -581,19 +581,19 @@ public class Person {
 }
 ```
 
-![day18%206382b20b8c654ce285eb6a1a78d2da03/Untitled%208.png](day18%206382b20b8c654ce285eb6a1a78d2da03/Untitled%208.png)
+![11](https://user-images.githubusercontent.com/63957819/103671224-f56e6c80-4fbd-11eb-99db-6431471a858c.png)
 
 toString메소드 오버라이딩 안 할 경우 @ 등 보인다.
 
-![day18%206382b20b8c654ce285eb6a1a78d2da03/Untitled%209.png](day18%206382b20b8c654ce285eb6a1a78d2da03/Untitled%209.png)
+![12](https://user-images.githubusercontent.com/63957819/103671226-f56e6c80-4fbd-11eb-87ae-8657db01af72.png)
 
 고객의 toString메소드 오버라이딩해서 모두 출력 되도록
 
-![day18%206382b20b8c654ce285eb6a1a78d2da03/Untitled%2010.png](day18%206382b20b8c654ce285eb6a1a78d2da03/Untitled%2010.png)
+![13](https://user-images.githubusercontent.com/63957819/103671227-f6070300-4fbd-11eb-9a3a-c2b82009b037.png)
 
 객체 내용이 아이디 비번이 다 있는데 직렬화 할 때만 제외하고 싶다 하면 멤버변수 앞에 transient예약어를 붙이면 된다. 보안상 문제가 될 때 쓰인다. 스택틱 멤버필드들은 객체 직렬화의 대상이 안된다. 스택틱은 객체랑 무관하여 객체 내의 저장 되지 않아 포함이 안된다. 
 
-![day18%206382b20b8c654ce285eb6a1a78d2da03/Untitled%2011.png](day18%206382b20b8c654ce285eb6a1a78d2da03/Untitled%2011.png)
+![14](https://user-images.githubusercontent.com/63957819/103671228-f6070300-4fbd-11eb-848f-835b69978af2.png)
 
 name은 왜 객체 직렬화 못했는가? customer가 갖고 있는 id만 직렬화. name은 부모인 Person이 갖고 있고 Serializable 구현이 안되어있으므로.. 즉 Serializable 인터페이스를 구현 클래스만 직렬화 할 수 있다.
 
